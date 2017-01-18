@@ -1,0 +1,22 @@
+uuid: f84cddc8-f5ec-4a8a-b9f8-a209b74eb884
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.produit
+  module:
+    - text
+id: node.produit.body
+field_name: body
+entity_type: node
+bundle: produit
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
