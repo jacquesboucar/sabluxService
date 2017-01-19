@@ -72,43 +72,24 @@
     <aside class="right-off-canvas-menu">
       {{ page.right_off_canvas }}
     </aside>
-
-      {% if page.meta_header %}
-        {% if meta_header_grid %}
-          <div class="row">
-            <div class="large-12 columns">
-        {% endif %}
-        {{ page.meta_header }}
-        {% if meta_header_grid %}
-            </div>
-          </div>
-        {% endif %}
-      {% endif %}
-
-      <header class="row">
-        {% if linked_site_name or linked_logo %}
-          <div class="large-2 columns">
-            {% if linked_logo %}
-              {{ linked_logo }}
-            {% endif %}
-          </div>
-          <div class="large-4 columns">
+      <nav class='topbar'>
+        <div class='row'>
+          <div class='logo_wrapper'>
             {% if is_front %}
-              <h1 id="site-name">{{ linked_site_name }}</h1>
+              <span id="logo">
+                <img class="logo" src="{{ directory }}/images/sablux/logo_sablux.png" alt="Logo Sablux Service - Retour Accueil" />
+              </span>
             {% else %}
-              <div id="site-name">{{ linked_site_name }}</div>
+              <a id="logo">
+                <img class="logo" src="{{ directory }}/images/sablux/logo_sablux.png" alt="Logo Sablux Service - Retour Accueil" />
+              </a>
             {% endif %}
           </div>
-        {% endif %}
-      </header>
-
-      {% if page.header %}
-        <div class="row">
-          <div class="large-12 columns">
+          {% if page.header %}
             {{ page.header }}
-          </div>
+          {% endif %}
         </div>
-      {% endif %}
+      </nav>
 
       <div class="row">
         {% if show_account_info %}

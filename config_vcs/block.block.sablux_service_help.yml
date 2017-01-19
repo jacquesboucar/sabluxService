@@ -11,7 +11,7 @@ _core:
 id: sablux_service_help
 theme: sablux_service
 region: content
-weight: -30
+weight: -7
 provider: null
 plugin: help_block
 settings:

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "361239ad70db170c80fbba45bd4b6c18",
-    "content-hash": "fdd6f2acc373754cb338c403069bd202",
+    "hash": "2b8410f4c24da4b014413ffa476b49ce",
+    "content-hash": "9b5fec2b86b7af08249bdcf7e0a553c6",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1355,6 +1355,92 @@
             "time": "2017-01-04 11:31:35"
         },
         {
+            "name": "drupal/devel",
+            "version": "1.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/devel",
+                "reference": "8.x-1.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/devel-8.x-1.0-beta1.zip",
+                "reference": null,
+                "shasum": "439d9cab6af0ddb5efbd31e16fbb5da1f510fe6f"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "suggest": {
+                "symfony/var-dumper": "Pretty print complex values better with var-dumper available"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1480796583"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Moshe Weitzman",
+                    "homepage": "https://github.com/weitzman",
+                    "email": "weitzman@tejasa.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "catch",
+                    "homepage": "https://www.drupal.org/user/35733"
+                },
+                {
+                    "name": "effulgentsia",
+                    "homepage": "https://www.drupal.org/user/78040"
+                },
+                {
+                    "name": "juampynr",
+                    "homepage": "https://www.drupal.org/user/682736"
+                },
+                {
+                    "name": "lussoluca",
+                    "homepage": "https://www.drupal.org/user/138068"
+                },
+                {
+                    "name": "moshe weitzman",
+                    "homepage": "https://www.drupal.org/user/23"
+                },
+                {
+                    "name": "pcambra",
+                    "homepage": "https://www.drupal.org/user/122101"
+                },
+                {
+                    "name": "salvis",
+                    "homepage": "https://www.drupal.org/user/82964"
+                },
+                {
+                    "name": "willzyx",
+                    "homepage": "https://www.drupal.org/user/1043862"
+                },
+                {
+                    "name": "yched",
+                    "homepage": "https://www.drupal.org/user/39567"
+                }
+            ],
+            "description": "Various blocks, pages, and functions for developers.",
+            "homepage": "http://drupal.org/project/devel",
+            "support": {
+                "source": "http://cgit.drupalcode.org/devel",
+                "issues": "http://drupal.org/project/devel",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
             "name": "drupal/entityqueue",
             "version": "1.0.0-alpha6",
             "source": {
@@ -1416,7 +1502,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/zurb_foundation-8.x-5.0-beta2.zip",
-                "reference": null,
+                "reference": "8.x-5.0-beta2",
                 "shasum": "b518f3e6966930362e4c4b9a63a528978f3a97f0"
             },
             "require": {
@@ -5998,7 +6084,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/entityqueue": 15,
-        "drupal/zurb_foundation": 10
+        "drupal/zurb_foundation": 10,
+        "drupal/devel": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,

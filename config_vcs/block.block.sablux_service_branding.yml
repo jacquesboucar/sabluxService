@@ -1,6 +1,6 @@
 uuid: 5f4a9ae8-1e7a-4ebb-8168-5c88cc7e2ef1
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
 id: sablux_service_branding
 theme: sablux_service
-region: header
-weight: 0
+region: '-1'
+weight: -1
 provider: null
 plugin: system_branding_block
 settings:

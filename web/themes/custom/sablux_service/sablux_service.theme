@@ -36,6 +36,7 @@ function sablux_service_preprocess_node(&$variables) {
  * Add convenience variables and template suggestions
  */
 function sablux_service_preprocess_page(&$variables) {
+  // dpm($variables);
 }
 
 /**

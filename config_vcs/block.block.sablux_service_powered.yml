@@ -1,6 +1,6 @@
 uuid: 8be11ce8-0b01-4ed7-bd57-abfffb174993
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
 id: sablux_service_powered
 theme: sablux_service
-region: meta_header
-weight: 10
+region: '-1'
+weight: -3
 provider: null
 plugin: system_powered_by_block
 settings:
