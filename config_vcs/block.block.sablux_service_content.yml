@@ -1,0 +1,22 @@
+uuid: ed4f9509-9ea1-45b2-a4c1-b78bc82588a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sablux_service
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: sablux_service_content
+theme: sablux_service
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

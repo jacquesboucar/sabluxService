@@ -1,0 +1,22 @@
+uuid: 9f8e5117-e846-4cbe-ba5b-eff94371a8d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sablux_service
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: sablux_service_messages
+theme: sablux_service
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

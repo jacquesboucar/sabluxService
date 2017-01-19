@@ -1,0 +1,10 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/sablux_service.css: {}
+  js:
+    js/sablux_service.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery

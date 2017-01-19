@@ -1,0 +1,20 @@
+uuid: 9a638bc6-7281-41df-9db0-6b06d946bcc5
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sablux_service
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: sablux_service_local_actions
+theme: sablux_service
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

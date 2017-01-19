@@ -1,0 +1,22 @@
+uuid: d9bf1b4f-3378-48d9-afcc-e774ba268f62
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - sablux_service
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: sablux_service_help
+theme: sablux_service
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

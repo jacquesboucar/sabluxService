@@ -1,7 +1,3 @@
-
-Warning: PHP Startup: Unable to load dynamic library '/usr/local/Cellar/php56/5.6.27_4/lib/php/extensions/no-debug-non-zts-20131226/mongodb.so' - dlopen(/usr/local/Cellar/php56/5.6.27_4/lib/php/extensions/no-debug-non-zts-20131226/mongodb.so, 9): image not found in Unknown on line 0
-
-Warning: PHP Startup: Unable to load dynamic library '/usr/local/Cellar/php56/5.6.27_4/lib/php/extensions/no-debug-non-zts-20131226/mongodb.so' - dlopen(/usr/local/Cellar/php56/5.6.27_4/lib/php/extensions/no-debug-non-zts-20131226/mongodb.so, 9): image not found in Unknown on line 0
 -- MySQL dump 10.13  Distrib 5.7.10, for osx10.10 (x86_64)
 --
 -- Host: localhost    Database: sabluxservice
