@@ -1,0 +1,24 @@
+uuid: 93d5d463-9207-4852-949c-728586c9dc23
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slideshow
+  module:
+    - views
+  theme:
+    - sablux_service
+id: views_block__slideshow_block_1
+theme: sablux_service
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:slideshow-block_1'
+settings:
+  id: 'views_block:slideshow-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

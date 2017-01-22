@@ -1,0 +1,33 @@
+uuid: 8dec9266-95ff-4d48-b865-2952be37a160
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_product_reference
+field_name: field_product_reference
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: appartement
+      label: Appartement
+    -
+      value: villa
+      label: Villa
+    -
+      value: studio
+      label: Studio
+    -
+      value: residence
+      label: Residence
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: 8fdf7bd6-869c-46c2-bdae-a006b1396afa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_price
+    - node.type.produit
+id: node.produit.field_product_price
+field_name: field_product_price
+entity_type: node
+bundle: produit
+label: Prix
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: 'F CFA'
+  suffix: ''
+field_type: integer

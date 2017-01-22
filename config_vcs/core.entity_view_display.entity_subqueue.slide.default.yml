@@ -1,0 +1,12 @@
+uuid: b7357900-6f2a-4e92-ae41-4ef735e1ed71
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.slide
+id: entity_subqueue.slide.default
+targetEntityType: entity_subqueue
+bundle: slide
+mode: default
+content: {  }
+hidden: {  }
