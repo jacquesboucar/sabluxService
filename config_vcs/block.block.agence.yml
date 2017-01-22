@@ -1,0 +1,25 @@
+uuid: e797be5d-1f1a-40ae-8921-d3741df77204
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:en_chiffres:e979557d-4118-4cf6-bd7c-b69df1fd24b2'
+  module:
+    - block_content
+  theme:
+    - sablux_service
+id: agence
+theme: sablux_service
+region: en_chiffre
+weight: -8
+provider: null
+plugin: 'block_content:e979557d-4118-4cf6-bd7c-b69df1fd24b2'
+settings:
+  id: 'block_content:e979557d-4118-4cf6-bd7c-b69df1fd24b2'
+  label: Agence
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

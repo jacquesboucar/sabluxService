@@ -1,0 +1,33 @@
+uuid: 3ed32a9b-c365-4873-b871-93de62f2a876
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_type
+field_name: field_type
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: agents
+      label: Agents
+    -
+      value: company
+      label: Compagnie
+    -
+      value: property
+      label: Propriétés
+    -
+      value: clients
+      label: Clients
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

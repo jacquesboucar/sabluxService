@@ -1,0 +1,40 @@
+uuid: e5f9071e-1e24-429a-92cb-29cfa42d9306
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.en_chiffres
+    - field.field.block_content.en_chiffres.field_chiffres
+    - field.field.block_content.en_chiffres.field_messages
+    - field.field.block_content.en_chiffres.field_type
+  module:
+    - options
+    - text
+id: block_content.en_chiffres.default
+targetEntityType: block_content
+bundle: en_chiffres
+mode: default
+content:
+  field_chiffres:
+    weight: 1
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 0
+      prefix_suffix: false
+    third_party_settings: {  }
+    type: number_decimal
+  field_messages:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_type:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+hidden: {  }

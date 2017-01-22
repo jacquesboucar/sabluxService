@@ -1,6 +1,6 @@
 uuid: 19de95e1-f683-426f-9a0c-340a1de6fc48
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.main
@@ -12,8 +12,8 @@ _core:
   default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
 id: sablux_service_main_menu
 theme: sablux_service
-region: '-1'
-weight: -4
+region: header
+weight: -6
 provider: null
 plugin: 'system_menu_block:main'
 settings:

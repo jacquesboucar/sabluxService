@@ -1,0 +1,21 @@
+uuid: 14bbabb4-6960-40d4-8017-9721f00df776
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.en_chiffres
+    - field.storage.block_content.field_messages
+  module:
+    - text
+id: block_content.en_chiffres.field_messages
+field_name: field_messages
+entity_type: block_content
+bundle: en_chiffres
+label: Messages
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,14 @@
+# Logfile created on 2017-01-19 20:05:04 +0000 by logger.rb/31641
+I, [2017-01-19T20:05:04.760545 #5376]  INFO -- : 0:  chunky_png (1.3.8) from /var/lib/gems/1.9.1/specifications/chunky_png-1.3.8.gemspec
+I, [2017-01-19T20:05:04.772560 #5376]  INFO -- : 0:  multi_json (1.12.1) from /var/lib/gems/1.9.1/specifications/multi_json-1.12.1.gemspec
+I, [2017-01-19T20:05:12.671566 #5376]  INFO -- : 0:  sass (3.4.23) from /var/lib/gems/1.9.1/specifications/sass-3.4.23.gemspec
+I, [2017-01-19T20:05:12.748947 #5376]  INFO -- : 0:  compass-core (1.0.3) from /var/lib/gems/1.9.1/specifications/compass-core-1.0.3.gemspec
+I, [2017-01-19T20:05:12.750036 #5376]  INFO -- : 0:  compass-import-once (1.0.5) from /var/lib/gems/1.9.1/specifications/compass-import-once-1.0.5.gemspec
+I, [2017-01-19T20:05:14.904666 #5376]  INFO -- : 0:  rb-fsevent (0.9.8) from /var/lib/gems/1.9.1/specifications/rb-fsevent-0.9.8.gemspec
+I, [2017-01-19T20:05:39.019530 #5376]  INFO -- : 0:  ffi (1.9.17) from /var/lib/gems/1.9.1/specifications/ffi-1.9.17.gemspec
+I, [2017-01-19T20:05:39.053093 #5376]  INFO -- : 0:  rb-inotify (0.9.7) from /var/lib/gems/1.9.1/specifications/rb-inotify-0.9.7.gemspec
+I, [2017-01-19T20:05:39.053706 #5376]  INFO -- : 0:  compass (1.0.3) from /var/lib/gems/1.9.1/specifications/compass-1.0.3.gemspec
+I, [2017-01-19T20:05:44.997523 #5376]  INFO -- : 0:  font-awesome-sass (4.7.0) from /var/lib/gems/1.9.1/specifications/font-awesome-sass-4.7.0.gemspec
+I, [2017-01-19T20:05:46.695663 #5376]  INFO -- : 0:  thor (0.19.4) from /var/lib/gems/1.9.1/specifications/thor-0.19.4.gemspec
+I, [2017-01-19T20:05:46.703274 #5376]  INFO -- : 0:  foundation (1.0.4) from /var/lib/gems/1.9.1/specifications/foundation-1.0.4.gemspec
+I, [2017-01-19T20:05:46.704642 #5376]  INFO -- : 0:  bundler (1.5.1) from /var/lib/gems/1.9.1/specifications/bundler-1.5.1.gemspec

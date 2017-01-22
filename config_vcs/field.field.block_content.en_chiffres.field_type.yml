@@ -1,0 +1,21 @@
+uuid: 7887bb1e-ba00-445f-b344-0357d22a38e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.en_chiffres
+    - field.storage.block_content.field_type
+  module:
+    - options
+id: block_content.en_chiffres.field_type
+field_name: field_type
+entity_type: block_content
+bundle: en_chiffres
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

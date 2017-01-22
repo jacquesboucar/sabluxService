@@ -1,0 +1,42 @@
+uuid: ada51b40-6021-47d6-bc74-99a0bd3504d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.en_chiffres
+    - field.field.block_content.en_chiffres.field_chiffres
+    - field.field.block_content.en_chiffres.field_messages
+    - field.field.block_content.en_chiffres.field_type
+  module:
+    - text
+id: block_content.en_chiffres.default
+targetEntityType: block_content
+bundle: en_chiffres
+mode: default
+content:
+  field_chiffres:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+  field_messages:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: messages
+    third_party_settings: {  }
+    type: text_textfield
+  field_type:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  info:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

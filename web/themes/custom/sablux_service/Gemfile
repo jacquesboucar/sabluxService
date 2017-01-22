@@ -1,0 +1,9 @@
+source "https://rubygems.org"
+# Replace 1.0.4 with the version of Foundation you want to use
+gem "foundation", "1.0.4"
+gem "compass"
+gem 'font-awesome-sass'
+
+# For more information on this file see:
+# http://foundation.zurb.com/docs/sass.html
+# http://zslabs.com/articles/versioned-dependencies-with-compass

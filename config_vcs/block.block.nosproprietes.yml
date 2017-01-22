@@ -1,0 +1,25 @@
+uuid: 222beb92-147f-4134-ad85-f5811f438489
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:en_chiffres:236e5a4f-66c9-4437-aba0-445b8da7369b'
+  module:
+    - block_content
+  theme:
+    - sablux_service
+id: nosproprietes
+theme: sablux_service
+region: en_chiffre
+weight: -6
+provider: null
+plugin: 'block_content:236e5a4f-66c9-4437-aba0-445b8da7369b'
+settings:
+  id: 'block_content:236e5a4f-66c9-4437-aba0-445b8da7369b'
+  label: 'Nos propriétés'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
