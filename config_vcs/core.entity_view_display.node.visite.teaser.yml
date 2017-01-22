@@ -1,0 +1,17 @@
+uuid: 9646b45c-1ef2-4772-93f1-ca89cd71a613
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.visite
+  module:
+    - user
+id: node.visite.teaser
+targetEntityType: node
+bundle: visite
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }

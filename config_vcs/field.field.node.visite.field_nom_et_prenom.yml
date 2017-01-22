@@ -1,0 +1,19 @@
+uuid: b90fb9b7-0f1d-407e-99b2-b0fea6919435
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nom_et_prenom
+    - node.type.visite
+id: node.visite.field_nom_et_prenom
+field_name: field_nom_et_prenom
+entity_type: node
+bundle: visite
+label: 'Nom et Prenom'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

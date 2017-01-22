@@ -25,7 +25,8 @@
         "drupal/entityqueue": "^1.0@alpha",
         "drupal/zurb_foundation": "^5.0@beta",
         "drupal/views_slideshow": "^4.3",
-        "drupal/views_load_more": "1.x-dev"
+        "drupal/views_load_more": "1.x-dev",
+        "drupal/search_api": "^1.0@beta"
     },
     "require-dev": {
         "behat/mink": "~1.7",
