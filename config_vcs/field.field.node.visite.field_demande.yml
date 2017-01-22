@@ -1,0 +1,21 @@
+uuid: 610d8d69-6dd2-43ae-ad17-c80bd2e6044d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_demande
+    - node.type.visite
+  module:
+    - text
+id: node.visite.field_demande
+field_name: field_demande
+entity_type: node
+bundle: visite
+label: Demande
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

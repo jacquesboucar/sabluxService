@@ -1,0 +1,23 @@
+uuid: 85c8c152-db10-4d2a-b87e-2e7745efbe6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_reference
+    - node.type.produit
+  module:
+    - options
+id: node.produit.field_product_reference
+field_name: field_product_reference
+entity_type: node
+bundle: produit
+label: Référence
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: appartement
+default_value_callback: ''
+settings: {  }
+field_type: list_string

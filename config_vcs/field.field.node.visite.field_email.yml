@@ -1,0 +1,19 @@
+uuid: 6f86537e-ae2b-48d2-bd95-8e2837e86227
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.visite
+id: node.visite.field_email
+field_name: field_email
+entity_type: node
+bundle: visite
+label: Email
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email
