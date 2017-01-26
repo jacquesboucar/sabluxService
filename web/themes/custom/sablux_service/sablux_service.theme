@@ -43,3 +43,17 @@ function sablux_service_preprocess_page(&$variables) {
  * Implements template_preprocess_views_view().
  */
 function sablux_service_preprocess_views_view(&$variables) {}
+
+/**
+ * Implements hook_css_alter().
+ */
+function senassurvie_css_alter(&$css) {
+  // Always remove base theme CSS.
+  $theme_path = drupal_get_path('theme', 'zurb_foundation');
+  kint($css);
+  foreach ($css as $path => $values) {
+    if (strpos($path, $theme_path) === 0) {
+      unset($css[$path]);
+    }
+  }
+}

@@ -1,3 +1,4 @@
+
 {#
 /**
  * @file
@@ -62,101 +63,97 @@
  * @see html.html.twig
  */
 #}
-
-<section class="off-canvas-wrap" data-offcanvas>
-  <div class="inner-wrap">
-    <aside class="left-off-canvas-menu">
-      {{ page.left_off_canvas }}
-    </aside>
-
-    <aside class="right-off-canvas-menu">
-      {{ page.right_off_canvas }}
-    </aside>
-      <nav class='topbar'>
-        <div class='row'>
-          <div class='logo_wrapper'>
-            {% if is_front %}
-              <span id="logo">
-                <img class="logo" src="{{ directory }}/images/sablux/logo_sablux.png" alt="Logo Sablux Service - Retour Accueil" />
-              </span>
-            {% else %}
-              <a id="logo">
-                <img class="logo" src="{{ directory }}/images/sablux/logo_sablux.png" alt="Logo Sablux Service - Retour Accueil" />
-              </a>
-            {% endif %}
-          </div>
-          {% if page.header %}
-            {{ page.header }}
-          {% endif %}
-        </div>
-      </nav>
-
-      <div class="row">
-        {% if show_account_info %}
-          <div class="{{ site_slogan ? 'large-6' : 'large-4 columns large-offset-8' }} columns hide-for-small">
-            <p>
-              {% if logged_in %}
-                <a href="{{ path('user.page') }}">{{ 'My Account'|t }}</a>
-                <a href="{{ path('user.logout') }}">{{ 'Logout'|t }}</a>
-              {% else %}
-                <a href="{{ path('user.login') }}">{{ 'Login'|t }}</a>
-                <a href="{{ path('user.register') }}">{{ 'Sign Up'|t }}</a>
-              {% endif %}
-            </p>
-          </div>
-        {% endif %}
-        {% if site_slogan %}
-          <div class="large-6 columns hide-for-small">
-            {{ site_slogan }}
-          </div>
-        {% endif %}
-        {% if show_account_info %}
-          <div class="show-for-small">
-            <div class="six mobile-two columns">
-              <p>
-                <a href="{{ path('user.login') }}" class="radius button">{{ 'Login'|t }}</a>
-              </p>
-            </div>
-            <div class="six mobile-two columns">
-              <p>
-                <a href="{{ path('user.register') }}" class="radius success button">{{ 'Sign Up'|t }}</a>
-              </p>
-            </div>
-          </div>
+<div class='body-wrapper'>
+  <nav class='topbar'>
+    <div class='container'>
+      <div class='logo_wrapper'>
+        {% if is_front %}
+          <span class="logo">
+            <img class="logo" src="{{ directory }}/images/sablux/logo_sablux.png" alt="Logo Sablux Service - Retour Accueil" />
+          </span>
+        {% else %}
+          <a class="logo">
+            <img class="logo" src="{{ directory }}/images/sablux/logo_sablux.png" alt="Logo Sablux Service - Retour Accueil" />
+          </a>
         {% endif %}
       </div>
+      {% if page.header %}
+        {{ page.header }}
+      {% endif %}
+    </div>
+  </nav>
+  <div class='main-content-wrapper'>
+    <a id="main-content"></a>
+    <div class="l-highlighted">
+      {% if breadcrumb and not is_front %} {{ breadcrumb }} {% endif %}
+      {% if title and not is_front %}
+        <h1 id="page-title" class="title">{{ title }}</h1>
+      {% endif %}
+      <div class="highlighted">
+        {% if page.highlighted %} {{ page.highlighted }} {% endif %}
+      </div>
+    </div>
 
-      {% if messages and not zurb_foundation_messages_modal %}
-      <div class="l-messages row">
-        <div class="large-12 columns">
+
+    {% if messages and not zurb_foundation_messages_modal %}
+      <div class="l-messages">
+        <div class="messages">
           {{ messages }}
         </div>
       </div>
-      {% endif %}
+    {% endif %}
 
-      {% if page.help %}
-      <div class="l-help row">
-        <div class="large-12 columns">
+    {% if page.help %}
+      <div class="l-help">
+        <div class="help">
           {{ page.help }}
         </div>
       </div>
+    {% endif %}
+
+    {% if is_front %}
+      {% if page.en_chiffres %}
+        <div class="l-en_chiffres">
+          <div class="en_chiffres">
+            {{ page.en_chiffres }}
+          </div>
+        </div>
       {% endif %}
 
-      <div class="row">
-        <div id="main" class="{{ main_grid }} columns">
-          {% if page.highlighted %}
-            {% spaceless %}
-              {{ page.highlighted }}
-            {% endspaceless %}
-          {% endif %}
-          <a id="main-content"></a>
-          {% if breadcrumb %} {{ breadcrumb }} {% endif %}
-          {% if title and not is_front %}
-            {{ title_prefix }}
-            <h1 id="page-title" class="title">{{ title }}</h1>
-            {{ title_suffix }}
-          {% endif %}
+      {% if page.services %}
+        <div class="l-services">
+          <div class="services">
+            {{ page.services }}
+          </div>
+        </div>
+      {% endif %}
 
+      {% if page.search %}
+        <div class="l-search">
+          <div class="search">
+            {{ page.search }}
+          </div>
+        </div>
+      {% endif %}
+
+      {% if page.properties %}
+        <div class="l-properties">
+          <div class="properties">
+            {{ page.properties }}
+          </div>
+        </div>
+      {% endif %}
+
+      {% if page.testimonials %}
+        <div class="l-testimonials">
+          <div class="testimonials">
+            {{ page.testimonials }}
+          </div>
+        </div>
+      {% endif %}
+    {% else %}
+      <div class="content-wrapper">
+        <main class="main">
           {% if tabs %}
             {{ tabs }}
             {% if tabs2 %} {{ tabs2 }} {% endif %}
@@ -167,7 +164,7 @@
             </ul>
           {% endif %}
           {{ page.content }}
-        </div>
+        </main>
         {% if page.sidebar_first %}
           <div id="sidebar-first" class="{{ sidebar_first_grid }} columns sidebar ">
             {{ page.sidebar_first }}
@@ -179,34 +176,34 @@
           </div>
         {% endif %}
       </div>
-      {% if page.footer_first or page.footer_middle or page.footer_last %}
-        <footer class="row">
-          {% if page.footer_first %}
-            <div id="footer-first" class="large-4 columns">
-              {{ page.footer_first }}
-            </div>
-          {% endif %}
-          {% if page.footer_middle %}
-            <div id="footer-middle" class="large-4 columns">
-              {{ page.footer_middle }}
-            </div>
-          {% endif %}
-          {% if page.footer_last %}
-            <div id="footer-last" class="large-4 columns">
-              {{ page.footer_last }}
-            </div>
-          {% endif %}
-        </footer>
-      {% endif %}
-      <div class="bottom-bar panel">
-        <div class="row">
-          <div class="large-12 columns">
-          &copy; {{ "now"|date('Y') }} {{ site_name }} {{ 'All rights reserved.'|t }}
+    {% endif %}
+    {% if page.footer_first or page.footer_middle or page.footer_last %}
+      <footer class="footer-wrapper">
+        {% if page.footer_first %}
+          <div class="footer-first footer">
+            {{ page.footer_first }}
           </div>
+        {% endif %}
+        {% if page.footer_middle %}
+          <div class="footer-middle footer">
+            {{ page.footer_middle }}
+          </div>
+        {% endif %}
+        {% if page.footer_last %}
+          <div class="footer-last footer">
+            {{ page.footer_last }}
+          </div>
+        {% endif %}
+      </footer>
+    {% endif %}
+    <div class="bottom-bar panel">
+      <div class="row">
+        <div class="large-12 columns">
+        &copy; {{ "now"|date('Y') }} {{ site_name }} {{ 'All rights reserved.'|t }}
         </div>
       </div>
-
-    <a class="exit-off-canvas"></a>
-
+    </div>
   </div>
-</section>
+
+</div>
+

@@ -25,3 +25,5 @@ hidden:
   field_product_adress: true
   field_product_categorie: true
   field_product_price: true
+  field_product_reference: true
+  field_product_type: true

@@ -2,7 +2,7 @@ name: sablux_service
 description: "Custom sub-theme, inherits from the Foundation base theme read <a href=\"http://foundation.zurb.com/docs/index.php\">framework documentation</a>"
 core: 8.x
 type: theme
-base theme: zurb_foundation
+# base theme: zurb_foundation
 
 # Image appears on admin/appearance
 # screenshot: images/screenshot.jpg
@@ -20,8 +20,13 @@ regions:
   help: Help
   page_top: 'Page top'
   page_bottom: 'Page bottom'
-  highlighted: Highlighted
-  content: Content
+  highlighted: 'Highlighted'
+  en_chiffres: 'En chiffres'
+  services: 'Services'
+  search: 'Search'
+  properties: 'Properties'
+  testimonials: 'Testimonials'
+  content: 'Content'
   sidebar_first: 'Left Sidebar'
   sidebar_second: 'Right Sidebar'
   footer_first: 'Footer first column'

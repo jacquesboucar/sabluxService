@@ -2,7 +2,10 @@ body {
   margin: 0px;
   &.toolbar-fixed {
     .body-wrapper {
-      margin-top: 40px;
+
     }
+  }
+  .main-content-wrapper {
+    padding-top: 54px;
   }
 }

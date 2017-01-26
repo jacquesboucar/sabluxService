@@ -5,10 +5,12 @@ dependencies:
   config:
     - field.field.node.slideshow.field_image
     - field.field.node.slideshow.field_link
+    - field.field.node.slideshow.field_message
     - node.type.slideshow
   module:
     - image
     - link
+    - text
     - user
 id: node.slideshow.default
 targetEntityType: node
@@ -34,6 +36,12 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+  field_message:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
   links:
     weight: 100
 hidden: {  }

@@ -1,0 +1,21 @@
+uuid: 481d06a3-5eab-493c-b35f-676c6a1d783d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_message
+    - node.type.slideshow
+  module:
+    - text
+id: node.slideshow.field_message
+field_name: field_message
+entity_type: node
+bundle: slideshow
+label: Message
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

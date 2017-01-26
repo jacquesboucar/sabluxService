@@ -14,4 +14,7 @@ mode: teaser
 content:
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_demande: true
+  field_email: true
+  field_nom_et_prenom: true

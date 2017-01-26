@@ -1,6 +1,6 @@
 uuid: 222beb92-147f-4134-ad85-f5811f438489
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:en_chiffres:236e5a4f-66c9-4437-aba0-445b8da7369b'
@@ -10,7 +10,7 @@ dependencies:
     - sablux_service
 id: nosproprietes
 theme: sablux_service
-region: en_chiffre
+region: '-1'
 weight: -6
 provider: null
 plugin: 'block_content:236e5a4f-66c9-4437-aba0-445b8da7369b'

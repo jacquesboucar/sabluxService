@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.node.slideshow.field_image
     - field.field.node.slideshow.field_link
+    - field.field.node.slideshow.field_message
     - image.style.thumbnail
     - node.type.slideshow
   module:
     - image
     - link
     - path
+    - text
 id: node.slideshow.default
 targetEntityType: node
 bundle: slideshow
@@ -35,6 +37,13 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+  field_message:
+    weight: 34
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
   path:
     type: path
     weight: 30
