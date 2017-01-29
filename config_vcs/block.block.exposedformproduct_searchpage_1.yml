@@ -1,0 +1,23 @@
+uuid: 0969d5f5-60a1-47b4-a31f-9bec1bae0ac4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.product_search
+  module:
+    - views
+  theme:
+    - sablux_service
+id: exposedformproduct_searchpage_1
+theme: sablux_service
+region: search
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:product_search-page_1'
+settings:
+  id: 'views_exposed_filter_block:product_search-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: 'Trouver votre futur chez vous'
+visibility: {  }

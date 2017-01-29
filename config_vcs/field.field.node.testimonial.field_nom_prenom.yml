@@ -1,0 +1,19 @@
+uuid: 23e0140b-1bc9-40c0-90cc-59dbeb180919
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nom_prenom
+    - node.type.testimonial
+id: node.testimonial.field_nom_prenom
+field_name: field_nom_prenom
+entity_type: node
+bundle: testimonial
+label: 'Nom Prénom'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

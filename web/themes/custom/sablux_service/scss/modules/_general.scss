@@ -9,3 +9,23 @@ body {
     padding-top: 54px;
   }
 }
+
+.l-footer-wrapper {
+  background-color:rgb(149, 27, 140);
+  padding: 15px 0;
+  .footer-wrapper {
+    @include grid-row;
+    font-size: 12px;
+    color: #fff;
+    .footer {
+      @include grid-column(6);
+      max-width: 48%;
+      &.footer-first {
+        padding-left: 0
+      }
+      &.footer-last {
+        padding-right: 0
+      }
+    }
+  }
+}

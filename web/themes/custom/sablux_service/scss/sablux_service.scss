@@ -35,6 +35,7 @@
 // Global Zurb Foundation variable overrides.
 @import "base/init";
 @import "base/elements";
+@import "fonts/font-awesome";
 
 // Comment out this import if you don't want to use normalize.
 // @import "./normalize";
@@ -43,7 +44,7 @@
 @import "./foundation/components/grid";
 // @import "./foundation/components/accordion";
 // @import "./foundation/components/alert-boxes";
-// @import "./foundation/components/block-grid";
+@import "./foundation/components/block-grid";
 // @import "./foundation/components/breadcrumbs";
 // @import "./foundation/components/button-groups";
 // @import "./foundation/components/buttons";
@@ -109,7 +110,7 @@
 // Modules
 @import "modules/general";
 @import "modules/topbar";
-@import "modules/views";
+@import "modules/front";
 // @import "modules/block";
 // @import "modules/button";
 

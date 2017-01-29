@@ -1,0 +1,24 @@
+uuid: 50ce3f3c-0dd5-443f-b3e0-79552c2f10b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.testimonial
+  module:
+    - views
+  theme:
+    - sablux_service
+id: views_block__testimonial_block_1
+theme: sablux_service
+region: testimonials
+weight: 0
+provider: null
+plugin: 'views_block:testimonial-block_1'
+settings:
+  id: 'views_block:testimonial-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

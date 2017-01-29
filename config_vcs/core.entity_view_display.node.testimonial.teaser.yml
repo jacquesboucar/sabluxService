@@ -1,0 +1,17 @@
+uuid: b09e77c3-3f74-4339-a2aa-62b42d66643a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.testimonial
+  module:
+    - user
+id: node.testimonial.teaser
+targetEntityType: node
+bundle: testimonial
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }

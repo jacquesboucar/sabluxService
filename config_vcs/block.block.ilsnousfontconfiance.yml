@@ -1,6 +1,6 @@
 uuid: 9ae90e5e-a5b7-4d76-9a26-15dde925c739
 langcode: en
-status: false
+status: true
 dependencies:
   content:
     - 'block_content:en_chiffres:068bd1d7-4fec-4f20-8911-b59e17bf4e59'
@@ -10,8 +10,8 @@ dependencies:
     - sablux_service
 id: ilsnousfontconfiance
 theme: sablux_service
-region: '-1'
-weight: -1
+region: en_chiffres
+weight: -6
 provider: null
 plugin: 'block_content:068bd1d7-4fec-4f20-8911-b59e17bf4e59'
 settings:

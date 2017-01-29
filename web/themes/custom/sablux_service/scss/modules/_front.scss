@@ -1,0 +1,296 @@
+@import "views_slideshow";
+
+.l-en_chiffres {
+  clear: both;
+  .en_chiffres {
+    padding: 50px 0 25px;
+    @include grid-row;
+    section {
+      @include grid-column(3);
+      max-width: 23%;
+      text-align: center;
+      color: #333;
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      .field {
+        color: gray;
+        &.field-block-content--field-type {
+          color: rgb(149, 27, 140);
+          &:before {
+            font-size: 8rem;
+          }
+          .field-item {
+            visibility: hidden;
+            font-size: 0;
+          }
+        }
+
+        &.field-block-content--field-chiffres {
+          .field-items {
+            .field-item {
+              font-size: 3rem;
+            }
+          }
+        }
+      }
+
+      &#block-agence {
+        .field-block-content--field-type {
+          @extend .fa;
+          @extend .fa-building;
+        }
+      }
+
+      &#block-nosagents {
+        .field-block-content--field-type {
+          @extend .fa;
+          @extend .fa-headphones;
+        }
+      }
+
+      &#block-nosproprietes {
+        .field-block-content--field-type {
+          @extend .fa;
+          @extend .fa-home;
+        }
+      }
+
+      &#block-ilsnousfontconfiance {
+        .field-block-content--field-type {
+          @extend .fa;
+          @extend .fa-users;
+        }
+      }
+    }
+  }
+}
+
+.l-properties {
+  clear: both;
+  .properties {
+    padding: 50px 0 25px;
+    @include grid-row;
+    section {
+      .item-list {
+        ul {
+          @include block-grid(3);
+          li {
+            max-width: 30%;
+            div {
+              color: gray;
+              // padding: 0 10px;
+              &.properties-img {
+                img {
+                  max-width: 100%;
+                  overflow: hidden;
+                  padding: 4px;
+                  background-color: #fff;
+                  border: 1px solid #ddd;
+                  border-radius: 4px;
+                }
+              }
+
+              &.properties-container {
+                & > a {
+                  text-transform: uppercase;
+                  line-height: 24px;
+                  font-weight: 400;
+                  font-style: normal;
+                  color: gray;
+                  font-size: 20px;
+                  display: block;
+                  margin: 10px 0 5px;
+                  text-decoration: none;
+                }
+
+                p {
+
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .more-link {
+        a {
+          @extend .btn;
+          margin: 0 auto;
+          width: 100px;
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.l-search {
+  clear: both;
+  .search {
+    padding: 50px 0 25px;
+    background-color:rgba(149, 27, 140, 0.4);
+    form {
+      @include grid-row;
+      .form-item {
+        @include grid-column(3);
+        max-width: 22%;
+
+        &.js-form-type-select {
+          @extend .fa;
+          @extend .fa-caret-down;
+          position: relative;
+          &:before {
+            position: absolute;
+            right: 21px;
+            margin-top: 10px;
+            top: -3px;
+            font-size: 1.5rem;
+            color: gray;
+          }
+        }
+
+        label {
+          display: none;
+        }
+
+        .form-select {
+          appearance: none;
+          -moz-appearance: none;
+          -webkit-appearance:none;
+          -ms-appearance:none;
+          width: 100%;
+          max-width: 100%;
+          display: block;
+          height: 34px;
+          padding: 6px 12px;
+          font-size: 14px;
+          line-height: 1.42857143;
+          color: #555;
+          background-color: #fff;
+          background-image: none;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+
+        .form-text {
+          width: 100%;
+          max-width: 100%;
+          width: 100%;
+          max-width: 100%;
+          display: block;
+          height: 30px;
+          font-size: 14px;
+          line-height: 1.42857143;
+          padding: 0 10px;
+          color: #555;
+          background-color: #fff;
+          background-image: none;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+      }
+
+      .form-actions {
+        clear: both;
+        width: 100%;
+        padding-top: 30px;
+        input {
+          @extend .btn;
+          cursor: pointer;
+          border: 1px solid gray;
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.l-testimonials {
+  clear: both;
+  .testimonials {
+    padding: 50px 0 25px;
+    background-color:rgba(gray, 0.4);
+    .skin-default {
+      position: relative;
+      @include grid-row;
+      .views_slideshow_cycle_main {
+        .views_slideshow_cycle_teaser_section {
+          .views_slideshow_cycle_slide {
+            .wrapper {
+              position: relative;
+              @include grid-row;
+              .field-content {
+                .testimonial-photo {
+                  @include grid-column($columns:2, $offset:2);
+                  img {
+                    max-width: 100%;
+                    width: 100px;
+                    height: auto;
+                    border-radius: 63px;
+                  }
+                }
+
+                .testimonial-content {
+                  @include grid-column(6);
+                  p {
+                    span {
+                      color: rgb(149, 27, 140);
+                    }
+                  }
+                }
+              }
+
+              img {
+
+              }
+            }
+          }
+        }
+      }
+
+      .views-slideshow-controls-top {
+        .views_slideshow_controls_text {
+          position: absolute;
+          width: 100%;
+          top: 45%;
+          span {
+            &.views_slideshow_controls_text_previous {
+              float: left;
+              a {
+                @extend .fa;
+                @extend .fa-chevron-left;
+              }
+            }
+
+            &.views_slideshow_controls_text_next {
+              float: right;
+              a {
+                @extend .fa;
+                @extend .fa-chevron-right;
+                &:before {
+                  float: right;
+                }
+              }
+            }
+
+            a {
+              color: transparent;
+              &:before {
+                color: #333;
+                font-size: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

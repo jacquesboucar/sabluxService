@@ -1,0 +1,16 @@
+uuid: 0cb0a236-f5e8-45a8-86d1-430fe0b76b0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.properties_home
+id: properties_home
+label: 'properties home'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: properties_home
+breakpoint_group: responsive_image
+fallback_image_style: properties_home

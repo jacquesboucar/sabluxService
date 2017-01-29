@@ -1,0 +1,25 @@
+uuid: 5d838419-6925-4e03-8cc1-5b87b4b24684
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8e457033-533a-47d7-8d32-aafaf8bc2e2c'
+  module:
+    - block_content
+  theme:
+    - sablux_service
+id: addresse
+theme: sablux_service
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:8e457033-533a-47d7-8d32-aafaf8bc2e2c'
+settings:
+  id: 'block_content:8e457033-533a-47d7-8d32-aafaf8bc2e2c'
+  label: Addresse
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

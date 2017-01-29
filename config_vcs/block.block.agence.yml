@@ -1,6 +1,6 @@
 uuid: e797be5d-1f1a-40ae-8921-d3741df77204
 langcode: en
-status: false
+status: true
 dependencies:
   content:
     - 'block_content:en_chiffres:e979557d-4118-4cf6-bd7c-b69df1fd24b2'
@@ -10,7 +10,7 @@ dependencies:
     - sablux_service
 id: agence
 theme: sablux_service
-region: '-1'
+region: en_chiffres
 weight: -9
 provider: null
 plugin: 'block_content:e979557d-4118-4cf6-bd7c-b69df1fd24b2'

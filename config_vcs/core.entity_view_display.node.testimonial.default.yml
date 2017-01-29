@@ -1,0 +1,42 @@
+uuid: fc1aa212-9dbe-46f5-a5b5-cfbc8598f5ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.testimonial.field_message
+    - field.field.node.testimonial.field_nom_prenom
+    - field.field.node.testimonial.field_photo
+    - node.type.testimonial
+  module:
+    - image
+    - text
+    - user
+id: node.testimonial.default
+targetEntityType: node
+bundle: testimonial
+mode: default
+content:
+  field_message:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_nom_prenom:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_photo:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  links:
+    weight: 100
+hidden: {  }

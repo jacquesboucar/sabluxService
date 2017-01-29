@@ -1,0 +1,24 @@
+uuid: de1cac0d-e948-4e59-b4b1-ed0749ecb516
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sablux_product_block
+  module:
+    - views
+  theme:
+    - sablux_service
+id: views_block__sablux_product_block_block_1
+theme: sablux_service
+region: properties
+weight: -9
+provider: null
+plugin: 'views_block:sablux_product_block-block_1'
+settings:
+  id: 'views_block:sablux_product_block-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

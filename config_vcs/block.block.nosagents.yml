@@ -1,6 +1,6 @@
 uuid: c5854af5-7830-4bf2-a9e3-5015e7c90921
 langcode: en
-status: false
+status: true
 dependencies:
   content:
     - 'block_content:en_chiffres:9579335f-9cca-4721-bcc9-7aa5d3b5abfa'
@@ -10,8 +10,8 @@ dependencies:
     - sablux_service
 id: nosagents
 theme: sablux_service
-region: '-1'
-weight: 0
+region: en_chiffres
+weight: -8
 provider: null
 plugin: 'block_content:9579335f-9cca-4721-bcc9-7aa5d3b5abfa'
 settings:

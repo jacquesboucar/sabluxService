@@ -69,17 +69,17 @@
       <div class='logo_wrapper'>
         {% if is_front %}
           <span class="logo">
-            <img class="logo" src="{{ directory }}/images/sablux/logo_sablux.png" alt="Logo Sablux Service - Retour Accueil" />
+            <img class="logo" src="/{{ directory }}/images/sablux/logo_sablux.png" alt="Logo Sablux Service - Retour Accueil" />
           </span>
         {% else %}
-          <a class="logo">
-            <img class="logo" src="{{ directory }}/images/sablux/logo_sablux.png" alt="Logo Sablux Service - Retour Accueil" />
+          <a class="logo" href="/">
+            <img class="logo" src="/{{ directory }}/images/sablux/logo_sablux.png" alt="Logo Sablux Service - Retour Accueil" />
           </a>
         {% endif %}
       </div>
-      {% if page.header %}
+      {# {% if page.header %}
         {{ page.header }}
-      {% endif %}
+      {% endif %} #}
     </div>
   </nav>
   <div class='main-content-wrapper'>
@@ -178,32 +178,26 @@
       </div>
     {% endif %}
     {% if page.footer_first or page.footer_middle or page.footer_last %}
-      <footer class="footer-wrapper">
-        {% if page.footer_first %}
-          <div class="footer-first footer">
-            {{ page.footer_first }}
-          </div>
-        {% endif %}
-        {% if page.footer_middle %}
-          <div class="footer-middle footer">
-            {{ page.footer_middle }}
-          </div>
-        {% endif %}
-        {% if page.footer_last %}
-          <div class="footer-last footer">
-            {{ page.footer_last }}
-          </div>
-        {% endif %}
+      <footer class="l-footer-wrapper">
+        <div class="footer-wrapper">
+          {% if page.footer_first %}
+            <div class="footer-first footer">
+              {{ page.footer_first }}
+            </div>
+          {% endif %}
+          {% if page.footer_middle %}
+            <div class="footer-middle footer">
+              {{ page.footer_middle }}
+            </div>
+          {% endif %}
+          {% if page.footer_last %}
+            <div class="footer-last footer">
+              {{ page.footer_last }}
+            </div>
+          {% endif %}
+        </div>
       </footer>
     {% endif %}
-    <div class="bottom-bar panel">
-      <div class="row">
-        <div class="large-12 columns">
-        &copy; {{ "now"|date('Y') }} {{ site_name }} {{ 'All rights reserved.'|t }}
-        </div>
-      </div>
-    </div>
   </div>
-
 </div>
 

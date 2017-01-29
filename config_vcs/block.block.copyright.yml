@@ -1,0 +1,25 @@
+uuid: 0be58413-47fd-435e-be46-12f6cf52f5fd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:74fcf69b-4ef5-49f3-8a40-8dfd90b62420'
+  module:
+    - block_content
+  theme:
+    - sablux_service
+id: copyright
+theme: sablux_service
+region: footer_last
+weight: 0
+provider: null
+plugin: 'block_content:74fcf69b-4ef5-49f3-8a40-8dfd90b62420'
+settings:
+  id: 'block_content:74fcf69b-4ef5-49f3-8a40-8dfd90b62420'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

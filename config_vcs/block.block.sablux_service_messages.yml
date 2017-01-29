@@ -11,7 +11,7 @@ _core:
 id: sablux_service_messages
 theme: sablux_service
 region: '-1'
-weight: -3
+weight: -7
 provider: null
 plugin: system_messages_block
 settings:

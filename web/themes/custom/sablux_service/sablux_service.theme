@@ -47,13 +47,24 @@ function sablux_service_preprocess_views_view(&$variables) {}
 /**
  * Implements hook_css_alter().
  */
-function senassurvie_css_alter(&$css) {
+function sablux_service_css_alter(&$css) {
   // Always remove base theme CSS.
   $theme_path = drupal_get_path('theme', 'zurb_foundation');
-  kint($css);
+  // kint($css);
   foreach ($css as $path => $values) {
     if (strpos($path, $theme_path) === 0) {
       unset($css[$path]);
     }
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function sablux_service_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form_id = 'views_exposed_form') {
+    $form['field_product_price_value']['#placeholder']   = 'Prix minimun';
+    $form['field_product_price_value_1']['#placeholder'] = 'Prix maximun';
+    // kint($form['field_product_price_value']['#placeholder']);
   }
 }

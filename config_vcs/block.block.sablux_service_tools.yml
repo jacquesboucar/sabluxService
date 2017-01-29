@@ -1,6 +1,6 @@
 uuid: c2df1dbd-dfa6-426b-983e-4fb466a2a1f7
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.tools
@@ -12,8 +12,8 @@ _core:
   default_config_hash: NeHSoqm4XFqA7_0bDmR429ZZQt3LRbZMNRJTMsFyOfI
 id: sablux_service_tools
 theme: sablux_service
-region: sidebar_first
-weight: 0
+region: '-1'
+weight: -4
 provider: null
 plugin: 'system_menu_block:tools'
 settings:

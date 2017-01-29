@@ -51,19 +51,9 @@
     <h2 {{ title_attributes }}>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
-
-  {% if content_attributes|length %}
-  <div {{ content_attributes }}>
-    {% endif %}
-
-    {% block content %}
-      {{ content }}
-    {% endblock %}
-
-    {% if content_attributes|length %}
-  </div>
-  {% endif %}
-
+  {% block content %}
+    {{ content }}
+  {% endblock %}
   {% if block.delta != 'main' %}
 </section>
 {% endif %}
