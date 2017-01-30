@@ -5,14 +5,17 @@ dependencies:
   config:
     - field.field.node.produit.field_description
     - field.field.node.produit.field_image
+    - field.field.node.produit.field_number
     - field.field.node.produit.field_product_adress
-    - field.field.node.produit.field_product_categorie
     - field.field.node.produit.field_product_price
     - field.field.node.produit.field_product_reference
     - field.field.node.produit.field_product_type
+    - field.field.node.produit.field_status
+    - field.field.node.produit.field_video
     - node.type.produit
   module:
     - image
+    - isfield
     - options
     - text
     - user
@@ -35,6 +38,13 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+  field_number:
+    weight: 112
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
   field_product_adress:
     weight: 107
     label: above
@@ -42,13 +52,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-  field_product_categorie:
-    weight: 104
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
   field_product_price:
     weight: 106
     label: above
@@ -69,6 +72,28 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_default
+  field_status:
+    weight: 113
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_video:
+    weight: 111
+    label: above
+    settings:
+      dimensions: 1770x500
+      autoplay: '1'
+      controls: '1'
+      loop: '-'
+      showinfo: '-'
+    third_party_settings: {  }
+    type: isfield_video
   links:
     weight: 100
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

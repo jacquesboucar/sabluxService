@@ -1,0 +1,198 @@
+.node--type-produit,
+.path-produits {
+  .main-content-wrapper {
+    .l-highlighted  {
+      .highlighted {
+        background-image: url('/themes/custom/sablux_service/images/sablux/subheader.jpg');
+        background-color: rgb(237, 237, 237);
+        background-position: 0% -325px;
+        background-size: 100% auto;
+        min-height: 400px;
+        background-repeat: no-repeat;
+        position: relative;
+        #block-sablux-service-page-title {
+          position: absolute;
+          top: 35%;
+          h1 {
+            width: 300px;
+            padding: 15px 10px;
+            background-color: rgba(128, 128, 128, 0.6);
+            color: #FFF;
+            text-align: center;
+            margin: 0 auto;
+            text-transform: uppercase;
+            line-height: 1.5em;
+          }
+        }
+      }
+    }
+    .content-wrapper {
+      main {
+        section {
+          clear: both;
+          article {
+            .field {
+              .field-label {
+                display: none;
+              }
+            }
+            .produits_number {
+              .field {
+                .field-item {
+                  color: gray;
+                  font-size: 0.8rem;
+                  font-weight: bold;
+                }
+              }
+            }
+            .produits_tools {
+              border-top: 1px solid gray;
+              padding: 10px 0;
+              @include grid-row;
+              .address {
+                @include grid-column($columns:3);
+                .field-node--field-product-adress {
+                  .field-items {
+                    .field-item {
+                      color: gray;
+                      font-size: 1.5rem;
+                      font-weight: bold;
+                    }
+                  }
+                }
+              }
+              .tools {
+                @include grid-column($columns:2, $offset:6, $float:right);
+                padding: 0;
+                .tool {
+                  float: right;
+                  background-color: rgba(149, 27, 140, 0.7);
+                  display: inline-block;
+                  padding: 10px;
+                  border-radius: 25px;
+                  color:transparent;
+                  margin-right: 10px;
+                  &:last-child {
+                    margin-right: 0;
+                  }
+                  &:before {
+                    color: #333;
+                  }
+                  &.video {
+                    @extend .fa;
+                    @extend .fa-video-camera;
+                  }
+                  &.agent {
+                    @extend .fa;
+                    @extend .fa-user;
+                  }
+                }
+              }
+            }
+            .produits_image {
+              .field {
+                &.field-node--field-image {
+                  padding-top: 10px;
+                  .field-item {
+                    img {
+                      max-width: 100%;
+                      height: 500px;
+                    }
+                  }
+                }
+              }
+            }
+            .produits_summary {
+              .info {
+                padding-top: 20px;
+                .field {
+                  display: inline-block;
+                  padding: 10px 15px;
+                  background-color: rgba(#951b8c, 0.5);
+                  color: #fff;
+                  border-radius: 10px;
+                }
+              }
+              .summary {
+                clear: both;
+                padding-top: 20px;
+                text-align: left;
+              }
+            }
+          }
+
+          .views-element-container {
+            margin-top: 30px;
+            .contextual-region {
+              .views-row {
+                @include grid-row;
+                padding:  15px 0;
+                border-bottom: 1px solid #951b8c;
+                &:last-child {
+                  border: none;
+                }
+                .field_image {
+                  @include grid-column(3);
+                  img {
+                    max-width: 100%;
+                  }
+                }
+                .field_content_info {
+                  @include grid-column(8);
+                  & > div {
+                    clear: both;
+                    font-size: 0.8rem;
+                    &.title {
+                      a {
+                        font-size: 1.2rem;
+                        text-decoration: none;
+                        color: #951b8c;
+                        text-transform: uppercase;
+                      }
+                    }
+                    &.info {
+                      text-transform: uppercase;
+                      .type {}
+                      .price {}
+                    }
+                    &.body {
+
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .sidebar {
+        .views-exposed-form {
+          form {
+            .form-item {
+              label {
+                display: none;
+              }
+              &.js-form-type-select {
+                @extend .fa;
+                @extend .fa-caret-down;
+                position: relative;
+                &:before {
+                  position: absolute;
+                  right: 21px;
+                  margin-top: 10px;
+                  top: -3px;
+                  font-size: 1.5rem;
+                  color: gray;
+                }
+              }
+
+              &.js-form-type-textfield {
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

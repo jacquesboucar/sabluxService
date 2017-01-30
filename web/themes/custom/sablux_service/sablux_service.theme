@@ -28,6 +28,7 @@ function sablux_service_preprocess_html(&$variables) {
  * Add template suggestions and classes
  */
 function sablux_service_preprocess_node(&$variables) {
+  // kint($variables['content']['field_video']);
 }
 
 /**
@@ -42,7 +43,9 @@ function sablux_service_preprocess_page(&$variables) {
 /**
  * Implements template_preprocess_views_view().
  */
-function sablux_service_preprocess_views_view(&$variables) {}
+function sablux_service_preprocess_views_view(&$variables) {
+  // kint($variables);
+}
 
 /**
  * Implements hook_css_alter().

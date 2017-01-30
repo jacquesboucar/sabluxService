@@ -1,0 +1,21 @@
+// Non-modular or client styles for the .l-content region.
+.interne {
+  .content-wrapper {
+    @include grid-row;
+    &.sidebar {
+      main {
+        @include grid-column(8);
+        float: left;
+      }
+      .sidebar {
+        @include grid-column(3);
+        &.sidebar-second {
+          float: right;
+        }
+      }
+    }
+    main {
+      @include grid-column(12);
+    }
+  }
+}

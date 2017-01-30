@@ -1,0 +1,23 @@
+uuid: f83cdc9b-0415-44f7-be57-19ccf3cbf03e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video
+    - node.type.produit
+  module:
+    - link
+id: node.produit.field_video
+field_name: field_video
+entity_type: node
+bundle: produit
+label: video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

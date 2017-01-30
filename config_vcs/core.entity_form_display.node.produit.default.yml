@@ -5,15 +5,18 @@ dependencies:
   config:
     - field.field.node.produit.field_description
     - field.field.node.produit.field_image
+    - field.field.node.produit.field_number
     - field.field.node.produit.field_product_adress
-    - field.field.node.produit.field_product_categorie
     - field.field.node.produit.field_product_price
     - field.field.node.produit.field_product_reference
     - field.field.node.produit.field_product_type
+    - field.field.node.produit.field_status
+    - field.field.node.produit.field_video
     - image.style.thumbnail
     - node.type.produit
   module:
     - image
+    - link
     - path
     - text
 id: node.produit.default
@@ -40,6 +43,13 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+  field_number:
+    weight: 42
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
   field_product_adress:
     weight: 37
     settings:
@@ -47,14 +57,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-  field_product_categorie:
-    weight: 34
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
   field_product_price:
     weight: 36
     settings:
@@ -71,6 +73,19 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+  field_status:
+    weight: 43
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+  field_video:
+    weight: 41
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
   path:
     type: path
     weight: 30

@@ -63,7 +63,7 @@
  * @see html.html.twig
  */
 #}
-<div class='body-wrapper'>
+<div class='body-wrapper {{ (is_front) ? 'front' : 'interne' }}'>
   <nav class='topbar'>
     <div class='container'>
       <div class='logo_wrapper'>
@@ -152,7 +152,7 @@
         </div>
       {% endif %}
     {% else %}
-      <div class="content-wrapper">
+      <div class="content-wrapper {{ (page.sidebar_first) ? 'sidebar_first sidebar' : ''}} {{ (page.sidebar_second) ? 'sidebar_second sidebar' : ''}}">
         <main class="main">
           {% if tabs %}
             {{ tabs }}
