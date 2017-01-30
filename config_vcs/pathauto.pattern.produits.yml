@@ -1,0 +1,22 @@
+uuid: 374b158d-2437-4fe3-9d2b-b6212baf942a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: produits
+label: Produits
+type: 'canonical_entities:node'
+pattern: 'produits/[node:title]'
+selection_criteria:
+  e19d7c1f-baaf-4efe-8391-4dc389cfbb32:
+    id: node_type
+    bundles:
+      produit: produit
+    negate: false
+    context_mapping:
+      node: node
+    uuid: e19d7c1f-baaf-4efe-8391-4dc389cfbb32
+selection_logic: and
+weight: -5
+relationships: {  }
